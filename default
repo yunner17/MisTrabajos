@@ -1,0 +1,8 @@
+default menu.c32
+prompt 0
+timeout 30
+MENU TITLE LinuxTechi.com PXE Menu
+LABEL UBUNTU
+MENU LABEL ubuntu_X64
+KERNEL /networkboot/vmlinuz
+APPEND initrd=/networkboot/initrd inst.repo=ftp://192.168.50.3/pub ks=ftp://192.168.50.3/pub/ubuntu.cfg
